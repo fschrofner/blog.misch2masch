@@ -14,108 +14,109 @@
 /**************/
 
 html {
-  font-size: 100%;
+    font-size: 100%;
 }
 
 body {
-	background: $palette1-dark-blue;
-  font: 18px/1.4 firaSans;
-  color: $palette4-yellow;
+	  background: $palette1-dark-blue;
+    font: 18px/1.4 firaSans;
+    color: $palette4-yellow;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
+    margin: 0 auto;
+    max-width: 740px;
+    padding: 0 10px;
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: firaSansSemiBold;
-  font-weight: bold;
+    font-family: firaSansSemiBold;
+    font-weight: bold;
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
+    line-height: 1.7;
+    margin: 0 0 15px;
+    padding: 0;
 
-  @include mobile {
-    line-height: 1.4;
-  }
+    @include mobile {
+        line-height: 1.4;
+    }
 }
 
 h1 {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 h2 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 h3 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 h4 {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 p {
-  margin: 15px 0;
+    margin: 15px 0;
 }
 
 a {
-  text-decoration: none;
-  &:hover, &:active {
-      color: $palette4-yellow-dark;
-  }
+    text-decoration: none;
+    color: $palette4-yellow;
+    &:hover, &:active {
+        color: $palette4-yellow-dark;
+    }
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+    margin: 15px 0;
+    padding-left: 30px;
 }
 
 ul {
-  list-style-type: disc;
+    list-style-type: disc;
 }
 
 ol {
-  list-style-type: decimal;
+    list-style-type: decimal;
 }
 
 ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
+    margin: 0;
 }
 
 ul ul, ol ul {
-  list-style-type: circle;
+    list-style-type: circle;
 }
 
 em, i {
-  font-style: italic;
+    font-style: italic;
 }
 
 strong, b {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
-  max-width: none;
+    max-width: none;
 }
 
 .date {
-  font-style: italic;
+    font-style: italic;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
     color: $palette1-red;
-  background: $palette1-cyan;
+    background: $palette1-cyan;
 }
 ::selection {
     color: $palette1-red;
@@ -143,82 +144,57 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .masthead {
-  padding: 20px 0;
+    padding: 20px 0;
 
-  @include mobile {
-    text-align: center;
-  }
+    @include mobile {
+        text-align: center;
+    }
 }
 
 .site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+    @include mobile {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 .site-info {
-  float: left;
+    float: left;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+    @include mobile {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 .site-name {
-  margin: 0;
-  cursor: pointer;
-  font-family: firaSansSemiBold;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+    margin: 0;
+    cursor: pointer;
+    font-family: firaSansSemiBold;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 1px;
 }
 
 .site-description {
-  margin: -5px 0 0 0;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
+    margin: -5px 0 0 0;
     font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-family: firaSansSemiBold;
 
     @include mobile {
-      margin: 0 10px;
-      color: $blue;
+        margin: 3px 0;
     }
-  }
 }
 
 //
@@ -226,31 +202,31 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  background-color: $palette1-dark-purple;
-  border-radius: 25px;
-  padding: 40px 12px 40px 12px;
+    background-color: $palette1-dark-purple;
+    border-radius: 25px;
+    padding: 40px;
+    margin-bottom: 40px;
 }
 
 .post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
+    blockquote {
+        margin: 1.8em .8em;
+        border-left: 2px solid $gray;
+        padding: 0.1em 1em;
+        color: $gray;
+        font-size: 22px;
+        font-style: italic;
+    }
 
-  .comments {
-    margin-top: 10px;
-  }
+    .comments {
+        margin-top: 10px;
+    }
 
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-    text-decoration: underline;
-  }
+    .read-more {
+        text-transform: uppercase;
+        font-size: 15px;
+        text-decoration: underline;
+    }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
