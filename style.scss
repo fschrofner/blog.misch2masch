@@ -211,8 +211,13 @@ img {
 .post {
     background-color: $palette1-dark-purple;
     border-radius: 25px;
-    padding: 40px;
-    
+    padding: 10px;
+    margin-bottom: 40px;
+
+    @include mobile {
+        padding: 10px;
+    }
+
     blockquote {
         margin: 1.8em .8em;
         border-left: 2px solid $gray;
