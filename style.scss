@@ -35,7 +35,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 
     line-height: 1.7;
-    margin: 0 0 15px;
     padding: 0;
 
     @include mobile {
@@ -211,10 +210,10 @@ img {
 .post {
     background-color: $palette1-dark-purple;
     border-radius: 25px;
-    padding: 10px;
+    padding: 40px;
     margin-bottom: 40px;
 
-    @include mobile {
+    @media only screen and (max-width: 600px) {
         padding: 10px;
     }
 
